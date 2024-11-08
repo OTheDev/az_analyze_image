@@ -25,7 +25,6 @@ jobs:
 
     - name: Run tests
       run: cargo test --release
-      working-directory: ./az_analyze_image
       shell: bash
       env:
         CV_KEY: ${{ secrets.CV_KEY }}
