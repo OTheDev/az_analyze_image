@@ -26,3 +26,7 @@ zeroize = "1.8.1"
 
 [dev-dependencies]
 tokio = { version = "1.41.0", features = ["full"] }
+
+# For README example
+image = "0.25.5"
+imageproc = "0.25.0"
