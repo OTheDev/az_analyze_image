@@ -3,4 +3,5 @@ resolver = "2"
 
 members = [
     "az_analyze_image",
+    "examples/*",
 ]
