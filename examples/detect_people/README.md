@@ -14,7 +14,7 @@ This example draws the bounding boxes on the image for detected persons with
 confidence greater than 0.75 and saves it to `out.jpg`:
 
 <p align="center">
-  <img src="https://github.com/OTheDev/az_analyze_image/blob/readme_example.md/examples/detect_people/out.jpg?raw=true" />
+  <img src="https://github.com/OTheDev/az_analyze_image/blob/main/examples/detect_people/out.jpg?raw=true" />
 </p>
 
 ## Image Source
