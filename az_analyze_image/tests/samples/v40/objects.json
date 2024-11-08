@@ -1,0 +1,39 @@
+{
+  "objectsResult": {
+    "values": [
+      {
+        "boundingBox": {
+          "x": 655,
+          "y": 83,
+          "w": 263,
+          "h": 605
+        },
+        "tags": [
+          {
+            "name": "person",
+            "confidence": 0.905
+          }
+        ]
+      },
+      {
+        "boundingBox": {
+          "x": 75,
+          "y": 76,
+          "w": 678,
+          "h": 414
+        },
+        "tags": [
+          {
+            "name": "television",
+            "confidence": 0.808
+          }
+        ]
+      }
+    ]
+  },
+  "modelVersion": "2023-02-01-preview",
+  "metadata": {
+    "width": 1038,
+    "height": 692
+  }
+}

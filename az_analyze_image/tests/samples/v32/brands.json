@@ -1,0 +1,21 @@
+{
+  "brands": [
+    {
+      "name": "Macy's",
+      "confidence": 0.667,
+      "rectangle": {
+        "x": 272,
+        "y": 19,
+        "w": 200,
+        "h": 239
+      }
+    }
+  ],
+  "requestId": "bd0d83d4-8a51-4b11-adfa-67067fe5d0b3",
+  "metadata": {
+    "height": 854,
+    "width": 1280,
+    "format": "Jpeg"
+  },
+  "modelVersion": "2021-05-01"
+}

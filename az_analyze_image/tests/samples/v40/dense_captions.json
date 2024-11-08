@@ -1,0 +1,111 @@
+{
+  "denseCaptionsResult": {
+    "values": [
+      {
+        "text": "a man pointing at a screen",
+        "confidence": 0.7767596244812012,
+        "boundingBox": {
+          "x": 0,
+          "y": 0,
+          "w": 1038,
+          "h": 692
+        }
+      },
+      {
+        "text": "a screen shot of a computer",
+        "confidence": 0.7601339221000671,
+        "boundingBox": {
+          "x": 62,
+          "y": 51,
+          "w": 673,
+          "h": 437
+        }
+      },
+      {
+        "text": "a man pointing at a screen",
+        "confidence": 0.7736578583717346,
+        "boundingBox": {
+          "x": 646,
+          "y": 63,
+          "w": 269,
+          "h": 605
+        }
+      },
+      {
+        "text": "a close up of a table",
+        "confidence": 0.7479931712150574,
+        "boundingBox": {
+          "x": 0,
+          "y": 536,
+          "w": 1021,
+          "h": 146
+        }
+      },
+      {
+        "text": "a close up of a man's head",
+        "confidence": 0.8116378784179688,
+        "boundingBox": {
+          "x": 782,
+          "y": 77,
+          "w": 116,
+          "h": 103
+        }
+      },
+      {
+        "text": "a person's back pocket",
+        "confidence": 0.7274041771888733,
+        "boundingBox": {
+          "x": 753,
+          "y": 538,
+          "w": 140,
+          "h": 135
+        }
+      },
+      {
+        "text": "a close up of a plant",
+        "confidence": 0.7625939846038818,
+        "boundingBox": {
+          "x": 0,
+          "y": 10,
+          "w": 86,
+          "h": 507
+        }
+      },
+      {
+        "text": "a man pointing at a screen",
+        "confidence": 0.7956112623214722,
+        "boundingBox": {
+          "x": 9,
+          "y": 15,
+          "w": 973,
+          "h": 651
+        }
+      },
+      {
+        "text": "a person in a yellow coat",
+        "confidence": 0.6707674860954285,
+        "boundingBox": {
+          "x": 687,
+          "y": 199,
+          "w": 225,
+          "h": 356
+        }
+      },
+      {
+        "text": "a screenshot of a phone",
+        "confidence": 0.7743726372718811,
+        "boundingBox": {
+          "x": 0,
+          "y": 0,
+          "w": 214,
+          "h": 541
+        }
+      }
+    ]
+  },
+  "modelVersion": "2023-02-01-preview",
+  "metadata": {
+    "width": 1038,
+    "height": 692
+  }
+}

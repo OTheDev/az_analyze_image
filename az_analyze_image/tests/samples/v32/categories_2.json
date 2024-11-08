@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "name": "building_",
+      "score": 0.51953125,
+      "detail": {
+        "landmarks": []
+      }
+    },
+    {
+      "name": "building_pillar",
+      "score": 0.34765625,
+      "detail": {
+        "landmarks": []
+      }
+    },
+    {
+      "name": "outdoor_",
+      "score": 0.00390625,
+      "detail": {
+        "landmarks": []
+      }
+    }
+  ],
+  "requestId": "fd1dd720-d65d-4a7c-bf47-37726f70eacb",
+  "metadata": {
+    "height": 853,
+    "width": 1280,
+    "format": "Jpeg"
+  },
+  "modelVersion": "2021-05-01"
+}

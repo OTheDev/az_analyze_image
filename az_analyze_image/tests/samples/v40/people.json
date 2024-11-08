@@ -1,0 +1,47 @@
+{
+  "modelVersion": "2023-02-01-preview",
+  "metadata": {
+    "width": 1038,
+    "height": 692
+  },
+  "peopleResult": {
+    "values": [
+      {
+        "boundingBox": {
+          "x": 659,
+          "y": 82,
+          "w": 256,
+          "h": 594
+        },
+        "confidence": 0.9592611193656921
+      },
+      {
+        "boundingBox": {
+          "x": 0,
+          "y": 1,
+          "w": 200,
+          "h": 507
+        },
+        "confidence": 0.00403070030733943
+      },
+      {
+        "boundingBox": {
+          "x": 0,
+          "y": 7,
+          "w": 69,
+          "h": 509
+        },
+        "confidence": 0.0024984374176710844
+      },
+      {
+        "boundingBox": {
+          "x": 0,
+          "y": 0,
+          "w": 203,
+          "h": 141
+        },
+        "confidence": 0.001100298948585987
+      }
+    ]
+  }
+}

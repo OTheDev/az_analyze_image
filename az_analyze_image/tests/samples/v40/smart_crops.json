@@ -1,0 +1,20 @@
+{
+  "modelVersion": "2023-02-01-preview",
+  "metadata": {
+    "width": 1038,
+    "height": 692
+  },
+  "smartCropsResult": {
+    "values": [
+      {
+        "aspectRatio": 1.09,
+        "boundingBox": {
+          "x": 303,
+          "y": 29,
+          "w": 692,
+          "h": 634
+        }
+      }
+    ]
+  }
+}

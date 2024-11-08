@@ -1,0 +1,24 @@
+{
+  "description": {
+    "tags": [
+      "man",
+      "person",
+      "hat",
+      "wearing",
+      "old"
+    ],
+    "captions": [
+      {
+        "text": "a man wearing a hat",
+        "confidence": 0.5868409276008606
+      }
+    ]
+  },
+  "requestId": "5cb5c17a-e691-4c61-a2aa-f0587bacd773",
+  "metadata": {
+    "height": 853,
+    "width": 1280,
+    "format": "Jpeg"
+  },
+  "modelVersion": "2021-05-01"
+}

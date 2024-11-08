@@ -1,0 +1,35 @@
+{
+  "categories": [
+    {
+      "name": "building_",
+      "score": 0.6015625,
+      "detail": {
+        "landmarks": [
+          {
+            "name": "Forbidden City",
+            "confidence": 0.9945366382598877
+          }
+        ]
+      }
+    },
+    {
+      "name": "outdoor_",
+      "score": 0.01953125,
+      "detail": {
+        "landmarks": [
+          {
+            "name": "Forbidden City",
+            "confidence": 0.9945366382598877
+          }
+        ]
+      }
+    }
+  ],
+  "requestId": "40d00b8f-fc27-499a-a837-c37e84f56270",
+  "metadata": {
+    "height": 859,
+    "width": 1280,
+    "format": "Jpeg"
+  },
+  "modelVersion": "2021-05-01"
+}

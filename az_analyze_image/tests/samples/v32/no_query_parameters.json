@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "name": "others_",
+      "score": 0.0234375
+    },
+    {
+      "name": "object_screen",
+      "score": 0.91796875
+    }
+  ],
+  "requestId": "2c9fd8aa-acc8-40e4-8d13-79737c7687d3",
+  "metadata": {
+    "height": 692,
+    "width": 1038,
+    "format": "Png"
+  },
+  "modelVersion": "2021-05-01"
+}

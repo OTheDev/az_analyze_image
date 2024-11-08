@@ -1,0 +1,23 @@
+{
+  "categories": [
+    {
+      "name": "abstract_",
+      "score": 0.00390625
+    },
+    {
+      "name": "others_",
+      "score": 0.01953125
+    },
+    {
+      "name": "people_portrait",
+      "score": 0.390625
+    }
+  ],
+  "requestId": "6c9d229e-8fb2-4ba9-8315-21c3685ea1a7",
+  "metadata": {
+    "height": 853,
+    "width": 1280,
+    "format": "Jpeg"
+  },
+  "modelVersion": "2021-05-01"
+}

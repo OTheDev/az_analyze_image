@@ -1,0 +1,83 @@
+{
+  "tags": [
+    {
+      "name": "black and white",
+      "confidence": 0.9927051067352295
+    },
+    {
+      "name": "headdress",
+      "confidence": 0.9894881248474121
+    },
+    {
+      "name": "human face",
+      "confidence": 0.983238935470581
+    },
+    {
+      "name": "person",
+      "confidence": 0.9734217524528503
+    },
+    {
+      "name": "clothing",
+      "confidence": 0.9706429243087769
+    },
+    {
+      "name": "outdoor",
+      "confidence": 0.9667158722877502
+    },
+    {
+      "name": "hat",
+      "confidence": 0.966546893119812
+    },
+    {
+      "name": "sun hat",
+      "confidence": 0.9661399722099304
+    },
+    {
+      "name": "building",
+      "confidence": 0.9522091746330261
+    },
+    {
+      "name": "fashion accessory",
+      "confidence": 0.9202934503555298
+    },
+    {
+      "name": "cowboy hat",
+      "confidence": 0.9152283668518066
+    },
+    {
+      "name": "street",
+      "confidence": 0.9075048565864563
+    },
+    {
+      "name": "man",
+      "confidence": 0.9019761681556702
+    },
+    {
+      "name": "fedora",
+      "confidence": 0.880980372428894
+    },
+    {
+      "name": "headgear",
+      "confidence": 0.8412641286849976
+    },
+    {
+      "name": "monochrome",
+      "confidence": 0.8008297681808472
+    },
+    {
+      "name": "ground",
+      "confidence": 0.7592607140541077
+    },
+    {
+      "name": "wearing",
+      "confidence": 0.6703507900238037
+    }
+  ],
+  "requestId": "32b332c9-00ca-46e8-bba0-06c2debb94e3",
+  "metadata": {
+    "height": 853,
+    "width": 1280,
+    "format": "Jpeg"
+  },
+  "modelVersion": "2021-05-01"
+}

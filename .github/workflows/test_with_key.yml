@@ -1,0 +1,31 @@
+name: Multi-Platform Test
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'az_analyze_image/**'
+
+  workflow_dispatch:
+
+jobs:
+  build-and-test:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install Rust
+      run: |
+        curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+      shell: bash
+
+    - name: Run tests
+      run: cargo test --release
+      shell: bash
+      env:
+        CV_KEY: ${{ secrets.CV_KEY }}
+        CV_ENDPOINT: ${{ secrets.CV_ENDPOINT }}

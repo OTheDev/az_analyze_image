@@ -1,0 +1,35 @@
+{
+  "objects": [
+    {
+      "rectangle": {
+        "x": 210,
+        "y": 65,
+        "w": 518,
+        "h": 308
+      },
+      "object": "hat",
+      "confidence": 0.61,
+      "parent": {
+        "object": "headwear",
+        "confidence": 0.784
+      }
+    },
+    {
+      "rectangle": {
+        "x": 35,
+        "y": 52,
+        "w": 918,
+        "h": 795
+      },
+      "object": "person",
+      "confidence": 0.908
+    }
+  ],
+  "requestId": "4240706c-1ad6-4e6e-86ea-08674cc80b18",
+  "metadata": {
+    "height": 853,
+    "width": 1280,
+    "format": "Jpeg"
+  },
+  "modelVersion": "2021-05-01"
+}
