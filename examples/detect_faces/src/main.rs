@@ -30,17 +30,14 @@ async fn main() -> Result<(), Box<dyn Error>> {
     // Call the Analyze Image API with the face detection feature enabled
     let faces: Vec<FaceDescription> = detect_faces(&client, IMAGE_URL).await?;
 
-    // Download the image bytes
-    let img_bytes: Vec<u8> = download_image(IMAGE_URL).await?;
-
     // Load the image
+    let img_bytes: Vec<u8> = download_image(IMAGE_URL).await?;
     let mut img: RgbImage =
         load_from_memory_with_format(&img_bytes, ImageFormat::Jpeg)?.to_rgb8();
 
     // Draw bounding boxes around all detected faces
-    draw_face_bounding_boxes(&mut img, &faces, COLORS, THICKNESS);
+    draw_bounding_boxes(&mut img, &faces, COLORS, THICKNESS);
 
-    // Save the new image
     img.save("out.jpg")?;
 
     Ok(())
@@ -74,7 +71,7 @@ async fn download_image(url: &str) -> Result<Vec<u8>, Box<dyn Error>> {
     Ok(response.to_vec())
 }
 
-fn draw_face_bounding_boxes(
+fn draw_bounding_boxes(
     img: &mut RgbImage,
     faces: &[FaceDescription],
     colors: &[Rgb<u8>],
