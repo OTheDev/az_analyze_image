@@ -5,18 +5,23 @@ SPDX-License-Identifier: Apache-2.0 OR MIT
 
 use az_analyze_image::v32::client::{AnalyzeImageOptions, Client};
 use az_analyze_image::v32::{FaceDescription, VisualFeatureTypes};
-
 use image::{load_from_memory_with_format, ImageFormat, Rgb, RgbImage};
 use imageproc::drawing::draw_hollow_rect_mut;
 use imageproc::rect::Rect;
-
 use reqwest::Client as ReqwestClient;
-
 use std::env::var;
 use std::error::Error;
 
 const IMAGE_URL: &str =
     "https://images.pexels.com/photos/1367269/pexels-photo-1367269.jpeg";
+
+// Pixel thickness for rectangle boundaries.
+const THICKNESS: i32 = 16;
+
+// Colors for each rectangle boundary. If there's more faces than COLORS.len(),
+// then we wrap around.
+const COLORS: &[Rgb<u8>] =
+    &[Rgb([1, 255, 79]), Rgb([0, 237, 245]), Rgb([118, 232, 181])];
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn Error>> {
@@ -33,7 +38,7 @@ async fn main() -> Result<(), Box<dyn Error>> {
         load_from_memory_with_format(&img_bytes, ImageFormat::Jpeg)?.to_rgb8();
 
     // Draw bounding boxes around all detected faces
-    draw_face_bounding_boxes(&mut img, &faces);
+    draw_face_bounding_boxes(&mut img, &faces, COLORS, THICKNESS);
 
     // Save the new image
     img.save("out.jpg")?;
@@ -57,7 +62,6 @@ async fn detect_faces(
         visual_features: Some(&features),
         ..Default::default()
     };
-
     let analysis = client.analyze_image_url(url, options).await?;
 
     Ok(analysis.faces.unwrap())
@@ -66,20 +70,22 @@ async fn detect_faces(
 async fn download_image(url: &str) -> Result<Vec<u8>, Box<dyn Error>> {
     let client = ReqwestClient::new();
     let response = client.get(url).send().await?.bytes().await?;
+
     Ok(response.to_vec())
 }
 
-fn draw_face_bounding_boxes(img: &mut RgbImage, faces: &[FaceDescription]) {
-    let thickness = 16;
-    let colors = [Rgb([1, 255, 79]), Rgb([0, 237, 245]), Rgb([118, 232, 181])];
-
+fn draw_face_bounding_boxes(
+    img: &mut RgbImage,
+    faces: &[FaceDescription],
+    colors: &[Rgb<u8>],
+    thickness: i32,
+) {
     for (i, face) in faces.iter().enumerate() {
         let bounding_box = Rect::at(
             face.face_rectangle.left as i32,
             face.face_rectangle.top as i32,
         )
         .of_size(face.face_rectangle.width, face.face_rectangle.height);
-
         let color = colors[i % colors.len()];
 
         draw_thick_rect(img, bounding_box, color, thickness);
