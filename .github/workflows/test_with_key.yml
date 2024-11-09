@@ -24,7 +24,15 @@ jobs:
       shell: bash
 
     - name: Run tests
-      run: cargo test --release
+      run: |
+        cargo test --release
+
+        # Run examples
+        for example in examples/*; do
+          if [ -f "$example/Cargo.toml" ]; then
+            cargo run --release --manifest-path "$example/Cargo.toml"
+          fi
+        done
       shell: bash
       env:
         CV_KEY: ${{ secrets.CV_KEY }}
