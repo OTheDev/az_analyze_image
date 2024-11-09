@@ -14,7 +14,7 @@ This example draws the bounding boxes on the image for all detected faces and
 saves it to `out.jpg`:
 
 <p align="center">
-  <img src="https://github.com/OTheDev/az_analyze_image/blob/detect_faces/examples/detect_faces/out.jpg?raw=true" />
+  <img src="https://github.com/OTheDev/az_analyze_image/blob/main/examples/detect_faces/out.jpg?raw=true" />
 </p>
 
 ## Image Source
