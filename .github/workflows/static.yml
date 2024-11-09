@@ -5,11 +5,13 @@ on:
     branches: [ main ]
     paths:
       - 'az_analyze_image/**'
+      - 'examples/**'
 
   pull_request:
     branches: [ main ]
     paths:
       - 'az_analyze_image/**'
+      - 'examples/**'
 
   workflow_dispatch:
 
