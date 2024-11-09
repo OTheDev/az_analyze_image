@@ -1,0 +1,11 @@
+[package]
+name = "detect_faces"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+az_analyze_image = "0.1.1"
+image = "0.25.5"
+imageproc = "0.25.0"
+reqwest = "0.12.9"
+tokio = { version = "1.41.1", features = ["full"] }
