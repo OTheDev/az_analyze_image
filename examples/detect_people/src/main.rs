@@ -5,13 +5,10 @@ SPDX-License-Identifier: Apache-2.0 OR MIT
 
 use az_analyze_image::v40::client::{AnalyzeImageOptions, Client};
 use az_analyze_image::v40::{DetectedPerson, VisualFeature};
-
 use image::{load_from_memory_with_format, ImageFormat, Rgb, RgbImage};
 use imageproc::drawing::draw_hollow_rect_mut;
 use imageproc::rect::Rect;
-
 use reqwest::Client as ReqwestClient;
-
 use std::env::var;
 use std::error::Error;
 
@@ -50,7 +47,7 @@ fn get_client() -> Client {
     let key = var("CV_KEY").expect("no CV_KEY");
     let endpoint = var("CV_ENDPOINT").expect("no CV_ENDPOINT");
 
-    Client::new(key, &endpoint).expect("failed to create client")
+    Client::new(key, &endpoint).unwrap()
 }
 
 async fn detect_people(
@@ -64,7 +61,7 @@ async fn detect_people(
     };
     let analysis = client.analyze_image_url(url, options).await?;
 
-    Ok(analysis.people_result.expect("no people result").values)
+    Ok(analysis.people_result.unwrap().values)
 }
 
 async fn download_image(url: &str) -> Result<Vec<u8>, Box<dyn Error>> {

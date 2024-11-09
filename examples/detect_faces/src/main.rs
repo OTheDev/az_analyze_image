@@ -47,7 +47,7 @@ fn get_client() -> Client {
     let key = var("CV_KEY").expect("no CV_KEY");
     let endpoint = var("CV_ENDPOINT").expect("no CV_ENDPOINT");
 
-    Client::new(key, &endpoint).expect("failed to create client")
+    Client::new(key, &endpoint).unwrap()
 }
 
 async fn detect_faces(
