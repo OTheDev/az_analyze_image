@@ -1,3 +1,8 @@
+/*
+Copyright 2024 Owain Davies
+SPDX-License-Identifier: Apache-2.0 OR MIT
+*/
+
 use az_analyze_image::v40::client::{AnalyzeImageOptions, Client};
 use az_analyze_image::v40::{DetectedPerson, VisualFeature};
 
