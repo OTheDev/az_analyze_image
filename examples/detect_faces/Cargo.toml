@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-az_analyze_image = "0.1.1"
+az_analyze_image = "0.1.2"
 image = "0.25.5"
 imageproc = "0.25.0"
 reqwest = "0.12.9"
